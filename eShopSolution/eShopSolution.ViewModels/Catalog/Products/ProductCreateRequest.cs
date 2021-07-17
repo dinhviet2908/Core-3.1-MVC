@@ -3,11 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace eShopSolution.ViewModels.Catalog.Products.Dtos.Manage
+namespace eShopSolution.ViewModels.Catalog.Products
 {
-    public class ProductUpdateRequest
+    public class ProductCreateRequest
     {
-        public int Id { get; set; }
+        public decimal Price { get; set; }
+        public decimal OriginalPrice { get; set; }
+        public int Stock { get; set; }
         public string Name { set; get; }
         public string Description { set; get; }
         public string Details { set; get; }
